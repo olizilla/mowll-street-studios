@@ -1,30 +1,33 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Mowll from '../components/Mowll.astro'
 ---
 
 <Layout>
-	<h1 class="bg-royal">
-		<img class="mx-auto py-12" src="/mowll.png" width="200" height="151" />
+	<h1 class="py-10">
+		<Mowll class="text-coral max-w-50 mx-auto" />
 	</h1>
-	<main class=" bg-gray-200 py-12 px-6 border-t-20 border-coral mx-auto max-w-xl">
+	<main class=" bg-gray-200 py-10 px-6 border-t-20 border-coral mx-auto max-w-xl">
 		<div class="mx-auto max-w-lg">
-			<h2 class="text-coral uppercase tracking-wider text-xl font-semibold pb-10">Studio space to hire</h2>
+			<h2 class="text-coral uppercase tracking-wider text-xl font-semibold pb-6">Studio space to hire</h2>
 			<p class="text-lg text-black">
 				Creative & Community focused.
 			</p>
 			<p class="text-lg text-black">
 				Providing unique spaces for work & events.
 			</p>
-			<p class="text-lg text-black pt-8">Large daylight studio space for hire - photography, rehearsals, workshops & more</p>
-
-			<h2 class="text-coral uppercase tracking-wider text-md font-semibold pt-10 pb-4">Contact</h2>
+			<p class="text-lg text-black pt-8">Large daylight studio space - photography, rehearsals, workshops & more.</p>
+			<h2 class="text-coral uppercase tracking-wider text-md font-semibold pt-8 pb-2">Contact</h2>
+			<p class="text-lg text-black pb-2">0207 582 0324</p>
 			<p class="text-lg text-black pb-2">info@mowllstreetstudios.org</p>
-			<p class="text-lg text-black pb-4">0207 582 0324</p>
-
-			<div class="text-center pt-8 text-lg">
-				<a class="bg-cornflower py-4 px-10 rounded-lg text-white font-bold mr-8" href="mailto:info@mowllstreetstudios.org">Email us</a>
-				<a class="bg-cornflower py-4 px-12 rounded-lg text-white font-bold" href="tel:+442075820324">Call us</a>
-			</div>
+			<p class="text-lg text-black ">11 Mowll St, London SW9 6GB</p>
 		</div>
 	</main>
+	<div class="text-center pt-12 text-lg">
+		<a class="bg-coral py-4 px-10 rounded-lg text-white font-bold mr-8" href="mailto:info@mowllstreetstudios.org">Email us</a>
+		<a class="bg-coral py-4 px-12 rounded-lg text-white font-bold" href="tel:+442075820324">Call us</a>
+	</div>
+	<div class="mx-auto max-w-xl pt-12 rounded-lg overflow-clip">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2484.9414225963956!2d-0.11585982315427344!3d51.477589512880385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876048b920107a3%3A0xa8af60abdc8af6b9!2sMowll%20Street%20Studios!5e0!3m2!1sen!2suk!4v1739459617824!5m2!1sen!2suk" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+	</div>	
 </Layout>
