@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+
+@theme {
+  --color-royal: #4f0237;
+  --color-coral: #ff4040;
+  --color-galverston-pink: #eac8bd;
+  --color-cornflower: #7391c8;
+}

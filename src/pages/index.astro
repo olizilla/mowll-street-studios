@@ -1,11 +1,33 @@
 ---
-import Welcome from '../components/Welcome.astro';
+import { Image } from 'astro:assets';
 import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import logo from '../assets/mowll.png'
 ---
 
 <Layout>
-	<Welcome />
+	<h1 class="bg-royal">
+		<Image class="mx-auto py-12" src={logo} alt="Mowell Street Studios" width={200} />
+	</h1>
+	<!-- <main class="rounded-lg bg-galverston-pink mt-16 p-8 mx-auto max-w-xl border-t-8 border-coral"> -->
+	<main class=" bg-gray-200 py-12 px-6 border-t-20 border-coral mx-auto max-w-xl">
+		<div class="mx-auto max-w-lg">
+			<h2 class="text-coral uppercase tracking-wider text-xl font-semibold pb-10">Studio space to hire</h2>
+			<p class="text-lg text-black">
+				Creative & Community focused.
+			</p>
+			<p class="text-lg text-black">
+				Providing unique spaces for work & events.
+			</p>
+			<p class="text-lg text-black pt-8">Large daylight studio space for hire - photography, rehearsals, workshops & more</p>
+
+			<h2 class="text-coral uppercase tracking-wider text-md font-semibold pt-10 pb-4">Contact</h2>
+			<p class="text-lg text-black pb-2">info@mowllstreetstudios.org</p>
+			<p class="text-lg text-black pb-4">0207 582 0324</p>
+
+			<div class="text-center pt-8 text-lg">
+				<a class="bg-cornflower py-4 px-10 rounded-lg text-white font-bold mr-8" href="mailto:info@mowllstreetstudios.org">Email us</a>
+				<a class="bg-cornflower py-4 px-12 rounded-lg text-white font-bold" href="tel:+442075820324">Call us</a>
+			</div>
+		</div>
+	</main>
 </Layout>
